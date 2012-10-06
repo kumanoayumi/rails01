@@ -36,3 +36,20 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# For Heroku
+gem 'thin'
+group :production do
+  gem 'pg'
+  gem 'newrelic_rpm'
+end
+
+# For OmniAuth
+gem 'omniauth-twitter'
+gem 'omniauth-scaffold', :group => :development
+
+# Utility
+gem 'kaminari'
+gem "rails_config"
+gem 'tapp'
+gem 'action_args'
